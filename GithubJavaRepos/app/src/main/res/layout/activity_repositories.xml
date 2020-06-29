@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.repositoriesGithub.RepositoriesActivity">
+
+    <include
+        android:id="@+id/include_toolbar_repo"
+        layout="@layout/include_toolbar" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper_repo_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize">
+
+        <ProgressBar
+            android:id="@+id/progressBarRepoScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewRepo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_repo" />
+
+        <TextView
+            android:id="@+id/errorTextViewRepoScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="ERROR 401"/>
+
+    </ViewFlipper>
+</RelativeLayout>

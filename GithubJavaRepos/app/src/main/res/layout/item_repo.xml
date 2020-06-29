@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space16"
+    android:layout_marginRight="@dimen/space16"
+    android:layout_marginTop="@dimen/space8"
+    android:orientation="horizontal"
+    android:background="@drawable/border_bottom"
+    android:weightSum="5">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/repo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRoyalblue"
+            android:textSize="@dimen/text20"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/repo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDkGray"
+            android:textSize="@dimen/text14"
+            tools:text="@string/app_name" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/forkstar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space8"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_code_fork"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_code_fork"
+                app:tint="@color/colorGold" />
+
+            <TextView
+                android:id="@+id/repo_count_forks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGold"
+                android:textSize="@dimen/text20"
+                android:layout_marginLeft="@dimen/space4"
+                tools:text="@string/base_count" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_star"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="@dimen/space16"
+                app:srcCompat="@drawable/ic_star"
+                app:tint="@color/colorGold" />
+
+            <TextView
+                android:id="@+id/repo_count_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGold"
+                android:textSize="@dimen/text20"
+                android:layout_marginLeft="@dimen/space4"
+                tools:text="@string/base_count" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_marginBottom="@dimen/space8"
+        android:layout_weight="3">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/profile_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_profile"
+            tools:tint="@color/colorDkGray" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRoyalblue"
+            android:textAlignment="center"
+            android:textSize="@dimen/text14"
+            tools:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/profile_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:textAlignment="center"
+            android:textSize="@dimen/text14"
+            tools:text="@string/app_name" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

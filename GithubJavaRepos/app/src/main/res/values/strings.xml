@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Github JavaPop</string>
+    <string name="repo_name">Nome Repositorio</string>
+    <string name="base_count">0</string>
+
+
+    <string name="error401">Unauthorized</string>
+    <string name="error400_gen">Bad Request</string>
+    <string name="error500">Internal Server Error</string>
+</resources>
