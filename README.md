@@ -2,4 +2,4 @@
 
 > 29/06/2020
 básico do teste android
-    - não tem: endless load, acessibilidade, display name e teste instrumentado
+    - não tem: endless load, display name e teste instrumentado
