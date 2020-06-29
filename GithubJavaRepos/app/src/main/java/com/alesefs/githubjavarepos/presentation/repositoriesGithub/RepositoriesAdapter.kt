@@ -47,11 +47,22 @@ class RepositoriesAdapter(
 
         fun bindView(repo: Repo) {
             repoTitle.text = repo.titleRepo
+            repoTitle.contentDescription = repo.titleRepo
+
             repoDescription.text = repo.descriptionRepo
+            repoDescription.contentDescription = repo.descriptionRepo
+
             repoCounterForks.text = repo.countForks.toString()
+            repoCounterForks.contentDescription = repo.countForks.toString()
+
             repoCounterStars.text = repo.countStars.toString()
+            repoCounterStars.contentDescription = repo.countStars.toString()
+
             repoUserName.text = "@${repo.userName}"
+            repoUserName.contentDescription = "@${repo.userName}"
+
             repoRealName.text = repo.userNameDisplay
+            repoRealName.contentDescription = repo.userNameDisplay
 
             Glide.with(itemView.context)
                 .load(repo.picture)
@@ -59,6 +70,7 @@ class RepositoriesAdapter(
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(R.drawable.ic_profile)
                 .into(picture);
+            picture.contentDescription = "foto de: ${repo.userName}"
 
             itemView.setOnClickListener {
                 onItemClickListener.invoke(repo)

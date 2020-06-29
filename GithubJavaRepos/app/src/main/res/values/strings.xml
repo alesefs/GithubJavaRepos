@@ -4,6 +4,8 @@
     <string name="base_count">0</string>
 
 
+    <string name="acc_error">Pagina de Erro</string>
+    <string name="acc_load">Carregando</string>
     <string name="error401">Unauthorized</string>
     <string name="error400_gen">Bad Request</string>
     <string name="error500">Internal Server Error</string>

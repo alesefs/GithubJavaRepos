@@ -8,10 +8,14 @@ open class BaseActivity : AppCompatActivity() {
 
     protected fun setupToolbar(toolbar: Toolbar, toolbarTitle: TextView, titleIdRes: String, showBackButton: Boolean = false) {
         toolbarTitle.text = titleIdRes
-        setSupportActionBar(toolbar)
-        if (showBackButton) {
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbarTitle.contentDescription = titleIdRes
+        toolbar?.apply {
+            setSupportActionBar(toolbar)
+            if (showBackButton) {
+                navigationContentDescription = "botão, voltar"
+                supportActionBar?.setDisplayHomeAsUpEnabled(true)
 //            supportActionBar?.setDisplayShowHomeEnabled(true);
+            }
         }
     }
 }

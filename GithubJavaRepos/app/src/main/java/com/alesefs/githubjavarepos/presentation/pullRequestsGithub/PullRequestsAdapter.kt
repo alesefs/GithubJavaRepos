@@ -38,9 +38,16 @@ class PullRequestsAdapter(
 
         fun bindView(pullRequest: PullRequest) {
             prTitle.text = pullRequest.titlePR
+            prTitle.contentDescription = pullRequest.titlePR
+
             prDescription.text = pullRequest.descriptionPR
+            prDescription.contentDescription = pullRequest.descriptionPR
+
             prProfileName.text = "@${pullRequest.userName}"
+            prProfileName.contentDescription = "@${pullRequest.userName}"
+
             prCreateAt.text = "Criado em: ${pullRequest.createAt}"
+            prCreateAt.contentDescription = "Criado em: ${pullRequest.createAt}"
 
             Glide.with(itemView.context)
                 .load(pullRequest.picture)
@@ -48,6 +55,7 @@ class PullRequestsAdapter(
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .placeholder(R.drawable.ic_profile)
                 .into(prProfilePic)
+            prProfilePic.contentDescription = "foto de: ${pullRequest.userName}"
 
         }
     }

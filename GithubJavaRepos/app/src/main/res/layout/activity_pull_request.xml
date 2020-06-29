@@ -21,7 +21,8 @@
             android:id="@+id/progressBarPullRequestScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:contentDescription="@string/acc_load"/>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycleViewPullRequests"
@@ -34,7 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            tools:text="ERROR 401"/>
+            android:contentDescription="@string/acc_error"
+            tools:text="ERROR 401" />
 
     </ViewFlipper>
 </RelativeLayout>
