@@ -6,8 +6,6 @@ import com.alesefs.githubjavarepos.data.response.ListDataPullRequestResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.text.SimpleDateFormat
-import java.util.*
 
 class PullRequestAPIDataSource: PullRequestRepository {
     override fun getPullRequest(

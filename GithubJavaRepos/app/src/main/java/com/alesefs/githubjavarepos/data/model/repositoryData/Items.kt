@@ -3,6 +3,7 @@ package com.alesefs.githubjavarepos.data.model.repositoryData
 import com.alesefs.githubjavarepos.data.response.ListUserNamesResponse
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import java.net.URL
 
 @JsonClass(generateAdapter = true)
 data class Items (
@@ -23,6 +24,6 @@ data class Items (
         userName = this.owner.login,
         realName = this.name,
         picture = this.owner.avatar_url,
-        userNameDisplay = this.owner.login
+        userNameDisplay = this.owner.url
     )
 }

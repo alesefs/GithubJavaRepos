@@ -8,5 +8,6 @@ data class Ownered (
     @Json(name = "login") val login: String?,
     @Json(name = "avatar_url") val avatar_url: String?,
     @Json(name = "html_url") val html_url: String?,
-    @Json(name = "name") val name: String?
+    @Json(name = "name") val name: String?,
+    @Json(name = "url") val url: String?
 )
